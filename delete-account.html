@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supprimer mon compte — Floss</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #080B12;
+      --surface: #0E1220;
+      --card: #141926;
+      --border: #252D42;
+      --gold: #D4A843;
+      --danger: #E05A5A;
+      --text-primary: #F0F2F8;
+      --text-secondary: #7A8AAD;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .logo { font-size: 1.25rem; font-weight: 700; color: var(--text-primary); text-decoration: none; }
+    nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; }
+    nav a:hover { color: var(--text-primary); }
+    main { max-width: 680px; margin: 0 auto; padding: 4rem 2rem; }
+    h1 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .subtitle { color: var(--text-secondary); margin-bottom: 3rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card h2 .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      border-radius: 20px;
+      background: var(--surface);
+      color: var(--text-secondary);
+    }
+    .steps { list-style: none; padding: 0; }
+    .steps li {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+      color: var(--text-secondary);
+      font-size: 0.925rem;
+    }
+    .step-num {
+      min-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #0a0a0a;
+      font-weight: 700;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .note {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      margin-top: 1rem;
+    }
+    .danger-note {
+      border-color: var(--danger);
+      color: #e8a0a0;
+    }
+    a { color: var(--gold); }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+    @media (max-width: 600px) {
+      header { padding: 1rem 1.25rem; }
+      main { padding: 2.5rem 1.25rem; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo" href="index.html">Floss</a>
+    <nav><a href="index.html">Accueil</a></nav>
+  </header>
+
+  <main>
+    <h1>Supprimer mon compte</h1>
+    <p class="subtitle">Vous pouvez supprimer votre compte et vos données directement depuis l'application Floss, sans avoir à nous contacter.</p>
+
+    <div class="card">
+      <h2>Supprimer toutes les données <span class="badge">Recommandé</span></h2>
+      <ul class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <span>Ouvrez l'application <strong>Floss</strong> sur votre appareil.</span>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <span>Accédez à l'onglet <strong>Paramètres</strong>.</span>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <span>Faites défiler jusqu'à la section <strong>Données</strong>.</span>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <span>Appuyez sur <strong>Réinitialiser toutes les données</strong> et confirmez.</span>
+        </li>
+      </ul>
+      <div class="note danger-note">
+        Cette action supprime définitivement votre profil, toutes vos catégories, toutes vos transactions, ainsi que vos données cloud si vous êtes connecté. Cette opération est irréversible.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Supprimer uniquement les catégories</h2>
+      <ul class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <span>Ouvrez l'application <strong>Floss</strong> sur votre appareil.</span>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <span>Accédez à l'onglet <strong>Paramètres</strong>.</span>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <span>Faites défiler jusqu'à la section <strong>Données</strong>.</span>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <span>Appuyez sur <strong>Réinitialiser les catégories</strong> et confirmez.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="note">
+      Vous n'avez pas accès à l'application ? Contactez-nous à <a href="mailto:floss@mystickora.com">floss@mystickora.com</a> et nous supprimerons manuellement vos données dans un délai de 30 jours.
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Mystickora · <a href="privacy-policy.html">Politique de confidentialité</a></p>
+  </footer>
+
+</body>
+</html>
